@@ -31,22 +31,42 @@ class ViewController: UIViewController{
     @IBAction func tapDidShowPokemons(_ sender: AnyObject) {
         
         switch self.typePokemonsname.text! {
-           
+            
         case"pikachu":
             playsound(sound: "found")
             pokemon(name: "\(self.typePokemonsname.text!)")
-
+            
         case"caterpie":
             playsound(sound: "found")
-             pokemon(name: "\(self.typePokemonsname.text!)")
+            pokemon(name: "\(self.typePokemonsname.text!)")
             
         case "ekans":
             playsound(sound: "found")
-             pokemon(name: "\(self.typePokemonsname.text!)")
-            case "clefairy":
+            pokemon(name: "\(self.typePokemonsname.text!)")
+        case "clefairy":
             playsound(sound: "found")
             pokemon(name: "\(self.typePokemonsname.text!)")
-
+        case "gastly":
+            playsound(sound: "found")
+            pokemon(name: "\(self.typePokemonsname.text!)")
+        case "onix":
+            playsound(sound: "found")
+            pokemon(name: "\(self.typePokemonsname.text!)")
+        case "squirtle":
+            playsound(sound: "found")
+            pokemon(name: "\(self.typePokemonsname.text!)")
+        case "pidgey":
+            playsound(sound: "found")
+            pokemon(name: "\(self.typePokemonsname.text!)")
+        case "bulbasaur":
+            playsound(sound: "found")
+            pokemon(name: "\(self.typePokemonsname.text!)")
+        case "charmander":
+            playsound(sound: "found")
+            pokemon(name: "\(self.typePokemonsname.text!)")
+        
+            
+            
         case "":
             let alert = UIAlertController(title: "Error", message: "Pokemons name can't be empty!", preferredStyle: .alert)
             let action = UIAlertAction(title: "OK!", style: .default, handler: nil)
@@ -60,9 +80,9 @@ class ViewController: UIViewController{
             
         }
         self.typePokemonsname.text = ""
-       
         
-    
+        
+        
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
@@ -77,15 +97,15 @@ class ViewController: UIViewController{
             mPlayer?.currentTime = 0.0
             mPlayer?.play()
             
-        
-        
+            
+            
         }catch let error as NSError{
-        
-        print(error.localizedDescription)
-        
+            
+            print(error.localizedDescription)
+            
         }
-    
-    
+        
+        
     }
     func pokemon(name: String){
         self.pokemonsImage.image = UIImage(named:name)
@@ -102,8 +122,8 @@ class ViewController: UIViewController{
                 self.pokemonball.isHidden  = false
                 
         })
-       
+        
     }
-   
+    
 }
 

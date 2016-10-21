@@ -9,7 +9,7 @@
 import UIKit
 import AVFoundation
 
-class ViewController: UIViewController {
+class ViewController: UIViewController{
 
     @IBOutlet weak var typePokemonsname: UITextField!
     @IBOutlet weak var pokemonsImage: UIImageView!
@@ -21,7 +21,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.pokemonsImage.isHidden = true
-    }
+           }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -64,8 +64,9 @@ class ViewController: UIViewController {
         
     
     }
-    func textFieldShouldReturn(textFiled: UITextField) ->Bool{
-        textFiled.resignFirstResponder()
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.typePokemonsname.resignFirstResponder()
         return true
     }
     func playsound(sound: String){

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		771ECF231DB9BBB100B58C8F /* found.wav in Resources */ = {isa = PBXBuildFile; fileRef = 771ECF211DB9BBB100B58C8F /* found.wav */; };
+		771ECF241DB9BBB100B58C8F /* not_found.wav in Resources */ = {isa = PBXBuildFile; fileRef = 771ECF221DB9BBB100B58C8F /* not_found.wav */; };
 		772973241DA396C900215FDC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772973231DA396C900215FDC /* AppDelegate.swift */; };
 		772973261DA396C900215FDC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772973251DA396C900215FDC /* ViewController.swift */; };
 		772973291DA396C900215FDC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 772973271DA396C900215FDC /* Main.storyboard */; };
@@ -15,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		771ECF211DB9BBB100B58C8F /* found.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = found.wav; sourceTree = "<group>"; };
+		771ECF221DB9BBB100B58C8F /* not_found.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = not_found.wav; sourceTree = "<group>"; };
 		772973201DA396C900215FDC /* My Pokemons.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My Pokemons.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		772973231DA396C900215FDC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		772973251DA396C900215FDC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -58,6 +62,8 @@
 				772973251DA396C900215FDC /* ViewController.swift */,
 				772973271DA396C900215FDC /* Main.storyboard */,
 				7729732A1DA396C900215FDC /* Assets.xcassets */,
+				771ECF211DB9BBB100B58C8F /* found.wav */,
+				771ECF221DB9BBB100B58C8F /* not_found.wav */,
 				7729732C1DA396C900215FDC /* LaunchScreen.storyboard */,
 				7729732F1DA396C900215FDC /* Info.plist */,
 			);
@@ -125,7 +131,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				7729732E1DA396C900215FDC /* LaunchScreen.storyboard in Resources */,
+				771ECF231DB9BBB100B58C8F /* found.wav in Resources */,
 				7729732B1DA396C900215FDC /* Assets.xcassets in Resources */,
+				771ECF241DB9BBB100B58C8F /* not_found.wav in Resources */,
 				772973291DA396C900215FDC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -302,6 +310,7 @@
 				772973341DA396C900215FDC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
